@@ -58,4 +58,20 @@ for a in range(S):
     if bool == False:
         break    
  """
- 
+
+""" 4) Дан список из 5 неповторяющихся ростов учеников, 
+дан еще ученик, куда вставить ученика в штрнеге по росту.
+Список отсортирован по уменьшению. """
+
+amount = 5
+list = []
+
+for i in range(amount):
+    list.append(int(input(f'Рост {i + 1}ого ученика: ')))
+
+height = int(input('Рост нового ученика: '))
+
+for i in range(len(list)):
+    if height > list[i]:
+        print(f'Позиция ученика в ширенге: {i+1}')
+        break
