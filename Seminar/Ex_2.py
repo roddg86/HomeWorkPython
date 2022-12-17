@@ -13,6 +13,15 @@ for i in range(n):
         print(3**i, end = ' ')    
  """
 
+""" n = int(input("Введите число "))
+
+lst_pow = []
+for i in range(n):
+    lst_pow.append((-3) ** i)
+
+print(*lst_pow, sep=' | ')
+ """
+
 """ 2) Напишите программу, в которой пользователь будет 
 задавать две строки, одна из них - буква, а вторая фраза/слово,
 программа должна посчитать сколько раз буква встретилась 
@@ -59,19 +68,71 @@ for a in range(S):
         break    
  """
 
+# summation, composition = map(int, input().split())
+# limit = summation
+
+# if summation < composition:
+#     limit = composition
+# for i in range(0, limit + 1):
+#     if(summation - i) * i == composition:
+#         print(summation - i, i)
+#         break
+
+# a = int(input('S = '))
+# b = int(input('P = '))
+
+# x = 0
+# y = 1
+
+# while (x + y != a) or (x * y != b):
+#     y += 1
+#     x = b // y
+
+# print(f'x = {x}, y = {y}')
+
 """ 4) Дан список из 5 неповторяющихся ростов учеников, 
 дан еще ученик, куда вставить ученика в штрнеге по росту.
 Список отсортирован по уменьшению. """
 
-amount = 5
-list = []
+# amount = 5
+# list = []
 
-for i in range(amount):
-    list.append(int(input(f'Рост {i + 1}ого ученика: ')))
+# for i in range(amount):
+#     list.append(int(input(f'Рост {i + 1}ого ученика: ')))
 
-height = int(input('Рост нового ученика: '))
+# height = int(input('Рост нового ученика: '))
 
-for i in range(len(list)):
-    if height > list[i]:
-        print(f'Позиция ученика в ширенге: {i+1}')
-        break
+# for i in range(len(list)):
+#     if height > list[i]:
+#         print(f'Позиция нового ученика в шеренге: {i+1}')
+#         break
+
+
+# from random import randint
+
+# lst_stud = [randint(150, 250) for _ in range(10)]
+
+# lst_stud.sort()
+# lst_stud = lst_stud[::-1]
+# # [start:stop:step] срезы
+
+# new_stud = int(input('Введите рост нового студента: '))
+
+# print(lst_stud, new_stud, sep='\n')
+
+# for i in range(len(lst_stud)):
+#     if new_stud > lst_stud[i]:
+#         lst_stud.insert(i, new_stud)
+#         break
+
+# print(lst_stud)
+
+
+# size = int(input('Введите рост нового человека: '))
+# list = [160, 165, 170, 180, 190, 200]
+
+# for i in range(len(list)):
+#     if list[i] > size:
+#         list.insert(i, size)
+#         break
+# print(list)
