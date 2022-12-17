@@ -31,10 +31,17 @@
 Для n = 15: Ответ: 3
 Для n = 35: Ответ: 5 """
 
+
+# def smallest_divider(number):
+#     denominator = 2
+#     while numberN % denominator:
+#         denominator += 1
+#     return denominator
+
+
 # numberN = int(input("Введите целое число: "))
-# denominator = 2
-# while numberN % denominator: denominator += 1
-# print(f"делитель числа {numberN} равен: {denominator}")
+# divider = smallest_divider(numberN)
+# print(f"Делитель числа {numberN} равен: {divider}")
 
 """ 3) Задайте список из (2*N+1) элементов, 
 заполненных числами из промежутка [-N, N].
