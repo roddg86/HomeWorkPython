@@ -36,25 +36,47 @@
 Пример списка ИНДЕКСОВ [2, 2, 3, 1, 8]
 
 Ввод: 4
-[-4, -3, -2, -1, 0, 1, 2, 3,4] """
+[-4, -3, -2, -1, 0, 1, 2, 3, 4] """
 
+
+# from random import randint
 # numberN = int(input('Введите число N: '))
 
-# elements = []
-# for i in range(2 * numberN + 1):
-#     elements.append (-numberN + i)
-# print (f'Список элементов от {-numberN} до {numberN}: {elements}')
+# """ функция задает список элементов """
 
-# index = []
-# for i in range(5):
-#     index.append (int(input(f'Введите {i + 1} индекс: ')))
-# print (f'Список индексов: {index}')
 
-# product_of_elements = 1
-# for i in range(len(index)):
-#     specified_index = index[i]
-#     product_of_elements *= elements[specified_index]
-# print (f'Произведение элементов: {product_of_elements}')
+# def list_elements(numberN):
+#     elements = []
+#     for i in range(2 * numberN + 1):
+#         elements.append(-numberN + i)
+#     return elements
+
+
+# """ функция заполняет список индексов """
+
+
+# def list_index(number):
+#     index = [randint(0, number) for _ in range(number)]
+#     return index
+
+
+# """ функция находит произведение элементов на указаных индексах """
+
+
+# def product_of_elements(index, elements):
+#     product = 1
+#     for i in range(len(index)):
+#         specified_index = index[i]
+#         product *= elements[specified_index]
+#     return product
+
+
+# elements = list_elements(numberN)
+# print(f'Список элементов {elements}')
+# index = list_index(5)
+# print(f'Список индексов {index}')
+# product = product_of_elements(index, elements)
+# print(f'Произведение {product}')
 
 """ 4)Требуется посчитать сумму чётных чисел, 
 расположенных между числами 1 и N включительно. """
