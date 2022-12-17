@@ -95,14 +95,21 @@
 """ 4)Требуется посчитать сумму чётных чисел, 
 расположенных между числами 1 и N включительно. """
 
+
+# def sum_even_numbers(number):
+
+#     list = []
+#     sum = 0
+
+#     for current in range(numberN):
+#         current += 1
+#         if current % 2 == 0:
+#             sum += current
+#         list.append(current)
+#     print(list)
+#     return sum
+
+
 # numberN = int(input('Введите число: '))
-
-# sum = 0
-
-# for current in range(numberN):
-#     current += 1
-#     if current % 2 == 0:
-#         sum += current
-#         print(current, end=' ')
-
-# print(f'сумма {sum}')
+# summa = sum_even_numbers(numberN)
+# print(f'сумма {summa}')
