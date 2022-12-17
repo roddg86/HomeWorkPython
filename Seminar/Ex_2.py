@@ -44,3 +44,18 @@ print(f'{letter} содержится в строке "{phrase}" {count} раз'
 *Пример*
 Ввод: 5 6
 Вывод: 2 3 """
+
+""" S = int(input('S = '))
+P = int(input('P = '))
+
+bool = True
+for a in range(S):
+    for b in range(S):
+        if a + b == S and a * b == P:
+            print(a, b)
+            bool = False
+            break
+    if bool == False:
+        break    
+ """
+ 
