@@ -38,6 +38,24 @@
 Ввод: 4
 [-4, -3, -2, -1, 0, 1, 2, 3,4] """
 
+# numberN = int(input('Введите число N: '))
+
+# elements = []
+# for i in range(2 * numberN + 1):
+#     elements.append (-numberN + i)
+# print (f'Список элементов от {-numberN} до {numberN}: {elements}')
+
+# index = []
+# for i in range(5):
+#     index.append (int(input(f'Введите {i + 1} индекс: ')))
+# print (f'Список индексов: {index}')
+
+# product_of_elements = 1
+# for i in range(len(index)):
+#     specified_index = index[i]
+#     product_of_elements *= elements[specified_index]
+# print (f'Произведение элементов: {product_of_elements}')
+
 """ 4)Требуется посчитать сумму чётных чисел, 
 расположенных между числами 1 и N включительно. """
 
