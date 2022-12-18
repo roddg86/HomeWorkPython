@@ -2,4 +2,6 @@
 
 ## Мои заметки
 
-[Функция range в Python](https://highload.today/funktsiya-range-python-float/ "Теория")
+[Функция range](https://highload.today/funktsiya-range-python-float/ "Теория")
+
+[Функция len](https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-len/ "Функция len() в Python, количество элементов объекта.")
