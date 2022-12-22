@@ -23,9 +23,15 @@
 - список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 - список: [], ищем: "123", ответ: -1 """
 
-# list = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
-
+# list = ["qwe", "asd", "zxc", "qwe", 5, "ertqwe"]
+# str = input('Введите строку ')
 # count = 0
 
 # for i in range(len(list)):
-    
+#     if list[i] == str:
+#         count += 1
+#         if count == 2:
+#             print(i)
+#             break
+# if count < 2:
+#     print('строки нет')
