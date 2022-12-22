@@ -24,6 +24,13 @@
 # mnoj.add(1)
 # print(mnoj)
 
+# def suma(*a):
+#     print(sum(a))
+#     return "Нет"
+
+
+# print(suma(2, 3, 4))
+
 """ 1.Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число. """
 
 # number = int(input('Введите число '))
@@ -95,13 +102,13 @@
 
 # третье решение через встроенную функцию
 
-list = ["qwe", "asd", "zxc", "qwe", 5, "ertqwe"]
-stroka = input()
+# list = ["qwe", "asd", "zxc", "qwe", 5, "ertqwe"]
+# stroka = input()
 
-if list.count(stroka) < 2:  # функция count считает количество вхождений элемента
-    print(-1)
-else:
-    # функция index возвращает первое вхождение элемента в нашем списке
-    ind = list.index(stroka)
-    list.pop(ind)  # удаляем
-    print(list.index(stroka) + 1)
+# if list.count(stroka) < 2:  # функция count считает количество вхождений элемента
+#     print(-1)
+# else:
+#     # функция index возвращает первое вхождение элемента в нашем списке
+#     ind = list.index(stroka)
+#     list.pop(ind)  # удаляем
+#     print(list.index(stroka) + 1)
