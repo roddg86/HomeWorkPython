@@ -1,7 +1,28 @@
 # list = [1, "stroka", 1]
+# list.append(13)
+# list[2]
+
 # kortez = (1, "stroka", 3)
-# slovar = {1: "one", "st": "two"}
+# kortez = (1,"stroka",3)
+# print(kortez[0])
+# print(kortez[1])
+
+# a,b,c = (1,"stroka",3)
+
+#slovar = {1: "one", "st": "two"}
+# slovar[5] = [1,2,3]
+# slovar[5].append(4)
+# for item in slovar:
+#     print(item, slovar[item])
+
 # mnoj = set()
+# for i in range(100):
+#     mnoj.add(i)
+
+# mnoj.add(1)
+# mnoj.add(2)
+# mnoj.add(1)
+# print(mnoj)
 
 """ 1.Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число. """
 
