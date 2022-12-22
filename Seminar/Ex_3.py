@@ -26,13 +26,26 @@
 
 """ 1.Задайте список. Напишите программу, которая определит, присутствует ли в заданном списке строк некое число. """
 
-number = int(input('Введите число '))
-list = ["qwe", "asd", "zxc", "qwe", "5","ertqwe"]
+# number = int(input('Введите число '))
+# list = ["qwe", "asd", "zxc", "qwe", "5","ertqwe"]
 
-if str(number) in list:
-    print(f'в списке есть число {number}')
-else:
-    print('числа нет')
+# if str(number) in list:
+#     print(f'в списке есть число {number}')
+# else:
+#     print('числа нет')
+
+# второе решение
+
+# def find_value(lst: list, value):
+#     for item in lst:
+#         if item == value:
+#             return True
+#     return False
+
+# lst_in = [1,2,3,4]
+# item_to_search = 5
+# is_found = find_value(lst_in, item_to_search)
+# print(is_found)
 
 """ 2. Напишите программу, которая определит позицию второго вхождения строки в списке либо сообщит, что её нет.
 
@@ -56,3 +69,39 @@ else:
 #             break
 # if count < 2:
 #     print('строки нет')
+
+# второе решение
+
+
+# def find_value(lst: list, value):
+#     count_in = 0
+#     index = -1
+
+#     if lst:
+#         while count_in < 2 and index < len(lst):
+#             index += 1
+
+#             if lst[index] == value:
+#                 count_in += 1
+
+#     if count_in != 2:
+#         return -1
+
+#     return index
+
+# lst_in = ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу"]
+# item_to_search = "йцу"
+# print(find_value(lst_in, item_to_search))
+
+# третье решение через встроенную функцию
+
+list = ["qwe", "asd", "zxc", "qwe", 5, "ertqwe"]
+stroka = input()
+
+if list.count(stroka) < 2:  # функция count считает количество вхождений элемента
+    print(-1)
+else:
+    # функция index возвращает первое вхождение элемента в нашем списке
+    ind = list.index(stroka)
+    list.pop(ind)  # удаляем
+    print(list.index(stroka) + 1)
