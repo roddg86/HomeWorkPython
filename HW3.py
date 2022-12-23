@@ -52,16 +52,16 @@
 
 """ bin(45) """
 
-# def to_binary(n):
-#     result = ''
-#     while n > 0:
-#         result = str(n % 2) + result
-#         n = n // 2
-#     return result
+def to_binary(number):
+    result = ''
+    while number > 0:
+        result = str(number % 2) + result
+        number = number // 2
+    return result
 
 
-# n = int(input('Введите целое число '))
-# print(to_binary(n))
+n = int(input('Введите целое число '))
+print(to_binary(n))
 
 """ 5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 
