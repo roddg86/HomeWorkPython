@@ -41,11 +41,15 @@
 
 # from random import randint
 
+# """ функция генерирует список случайных чисел """
+
 # def gen_list(number):
 #     list = []
 #     for i in range(number):
 #         list.append(randint(1, 9))
 #     return list
+
+# """ функция находит произведение чисел из поданого списка """
 
 # def product_pairs(list):
 #     list2 = []
@@ -72,6 +76,7 @@
 
 - [1.1, 1.2, 3.1, 5, 10.01] => 0.19 """
 
+""" функция генерирует список вещественных чисел """
 
 # from random import randint, uniform
 # def generate_list(number):
@@ -83,6 +88,7 @@
 #         my_list.append(round(uniform(1, 10), fract_part))
 #     return my_list
 
+# """ функция находит разницу """
 
 # def difference(my_list):
 #     min = 1
