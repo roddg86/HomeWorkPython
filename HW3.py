@@ -52,19 +52,33 @@
 
 """ bin(45) """
 
-def to_binary(number):
-    result = ''
-    while number > 0:
-        result = str(number % 2) + result
-        number = number // 2
-    return result
+# def to_binary(number):
+#     result = ''
+#     while number > 0:
+#         result = str(number % 2) + result
+#         number = number // 2
+#     return result
 
 
-n = int(input('Введите целое число '))
-print(to_binary(n))
+# n = int(input('Введите целое число '))
+# print(to_binary(n))
 
 """ 5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 
 Пример:
 
 - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] """
+
+
+def fibonacci(number):
+
+    list = [0, 1]
+    for i in range(2, number + 1):
+        list.append(list[-1] + list[-2])
+    for i in range(number):
+        list = [list[1] - list[0]] + list
+    return list
+
+
+number = int(input("Введите  число:\n"))
+print(f'для k = {number} список будет выглядеть так: {fibonacci(number)}')
