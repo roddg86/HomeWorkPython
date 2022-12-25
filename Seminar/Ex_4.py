@@ -5,7 +5,7 @@
 # str = input('Введите строку из чисел: ').split(" ")
 # print(str)
 # max = 0
-# m = 100
+# min = 100
 
 # for i in str:
 #     if int(i) > max:
