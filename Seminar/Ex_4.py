@@ -4,8 +4,8 @@
 
 # str = input('Введите строку из чисел: ').split(" ")
 # print(str)
-# max = 0
-# min = 100
+# max = int(str[0])
+# min = int(str[0])
 
 # for i in str:
 #     if int(i) > max:
