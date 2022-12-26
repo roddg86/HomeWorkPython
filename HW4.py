@@ -17,9 +17,24 @@
 
 """ 2. Задайте натуральное число N. 
 Напишите программу, которая составит список простых множителей числа N.
+
 N = 6 | N = 12    | 32                | 13 | 9     | 18        | 21
 2 * 3 | 2 * 2 * 3 | 2 * 2 * 2 * 2 * 2 | 13 | 3 * 3 | 2 * 3 * 3 | 3*7 """
 
+# def get_prime_factors(number):
+#     factors_list = []
+#     divisor = 2
+#     while divisor <= number:
+#         if number % divisor == 0:
+#             factors_list.append(divisor)
+#             number = number / divisor
+#         else:
+#             divisor += 1
+#     return factors_list
+
+# number = int(input('Введите натуральное число: '))
+# result = get_prime_factors(number)
+# print(result)
 
 """ 3. Задайте последовательность чисел. 
 Напишите программу, которая выведет список 
