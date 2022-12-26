@@ -47,6 +47,31 @@ N = 6 | N = 12    | 32                | 13 | 9     | 18        | 21
 2 1
  """
 
+# """ функция задает список из нескольких чисел """
+
+
+# from random import randint
+
+# def list_number(number):
+#     index = [randint(1, number) for _ in range(number)]
+#     return index
+
+# """ функция сохраняет в новый список только те элементы, 
+# для которых ключевые значения упоминаются только один раз"""
+
+
+# def unique_values(input_list):
+#     result_list = []
+#     for item in input_list:
+#         if input_list.count(item) == 1:
+#             result_list.append(item)
+#     return result_list
+
+# list = list_number(9)
+# print(list)
+# print(unique_values(list))
+
+
 """ 4. Задана натуральная степень k. 
 Сформировать случайным образом список коэффициентов 
 (значения от 0 до 100) многочлена и вывести многочлен степени k.
