@@ -51,10 +51,10 @@ N = 6 | N = 12    | 32                | 13 | 9     | 18        | 21
 
 
 # from random import randint
-
 # def list_number(number):
 #     index = [randint(1, number) for _ in range(number)]
 #     return index
+
 
 # """ функция сохраняет в новый список только те элементы,
 # для которых ключевые значения упоминаются только один раз"""
@@ -67,9 +67,11 @@ N = 6 | N = 12    | 32                | 13 | 9     | 18        | 21
 #             result_list.append(item)
 #     return result_list
 
+
 # list = list_number(9)
 # print(list)
-# print(unique_values(list))
+# list_res = unique_values(list)
+# print(*list_res) # выводит список с распаковаными элементами
 
 
 """ 4. Задана натуральная степень k.
