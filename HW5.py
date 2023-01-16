@@ -256,51 +256,61 @@ stroka = "3a4b2c3b"
 Вывод: stroka = "aaabbbbccbbb" """
 
 
-# def read_from_file(filename):
-#     with open(filename, 'r', encoding='utf-8') as file:
-#         return file.read()
+""" Функция считывает данные из поданного файла """
 
 
-# def write_to_file(filename, data):
-#     with open(filename, 'w', encoding='utf-8') as file:
-#         return file.write(data)
+def read_from_file(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        return file.read()
+
+""" Функция записывает данные в файл, на вход подается имя файла и данные """
 
 
-# def compression(string):
-#     count = 1
-#     result = string
-#     for i in range(len(string) - 1):
-#         if string[i] == string[i + 1]:
-#             count += 1
-#         if (string[i] != string[i + 1] or i == len(string) - 2) and count > 2:
-#             result = result.replace(
-#                 str(count * string[i]), f'{str(count)}{string[i]}')
-#             count = 1
-#     return result
+def write_to_file(filename, data):
+    with open(filename, 'w', encoding='utf-8') as file:
+        return file.write(data)
+
+""" Функция сжатия данных, запаковка """
 
 
-# def decompression(string):
-#     count = ''
-#     result = string
-#     for i in range(len(string)):
-#         if string[i].isdigit():
-#             count = count + string[i]
-#         if not string[i].isdigit() and count != '':
-#             result = result.replace(count, f'{(int(count) - 1) * string[i]}')
-#             count = ''
-#     return result
+def compression(txt):
+    count = 1
+    res = ''
+    for i in range(len(txt)-1):
+        if txt[i] == txt[i+1]:
+            count += 1
+        else:
+            res = res + str(count) + txt[i]
+            count = 1
+    if count > 1 or (txt[len(txt)-2] != txt[-1]):
+        res = res + str(count) + txt[-1]
+    return res
+
+""" Функция распаковки данных, декодирование """
 
 
-# print("==========СЖАТИЕ ТЕКСТА===========")
-# text_to_compressed = read_from_file("text_to_compress.txt")
-# print(text_to_compressed)
-# compressed_text = compression(text_to_compressed)
-# print(compressed_text)
-# write_to_file("compressed_text.txt", compressed_text)
+def decompression(txt):
+    number = ''
+    res = ''
+    for i in range(len(txt)):
+        if not txt[i].isalpha():
+            number += txt[i]
+        else:
+            res = res + txt[i] * int(number)
+            number = ''
+    return res
 
-# print("==========РАСПАКОВКА ТЕКСТА===========")
-# compressed_text = read_from_file("compressed_text.txt")
-# print(compressed_text)
-# decompressed_text = decompression(compressed_text)
-# print(decompressed_text)
-# write_to_file("text_to_compress.txt", decompressed_text)
+
+print("==========СЖАТИЕ ТЕКСТА===========")
+text_to_compressed = read_from_file("text_to_compress.txt")
+print(text_to_compressed)
+compressed_text = compression(text_to_compressed)
+print(f"{compressed_text}\n")
+write_to_file("compressed_text.txt", compressed_text)
+
+print("==========РАСПАКОВКА ТЕКСТА===========")
+compressed_text = read_from_file("compressed_text.txt")
+print(compressed_text)
+decompressed_text = decompression(compressed_text)
+print(decompressed_text)
+write_to_file("text_to_compress.txt", decompressed_text)
