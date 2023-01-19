@@ -12,6 +12,9 @@
 [12,'sadf',5643] ---> ['sadf'] ,[12,5643]
  """
 
+# list_init = [12, 'sadf', 5643]
+# print(f"Исходный список: {list_init}\nРазделённые списки: {list(filter(lambda x: not type(x) == int, list_init))}, {list(filter(lambda x: type(x) == int, list_init))}")
+
 """ Все задачи решать с помощью использования лямбд, filter, map, zip, enumerate, List Comprehension
 3) Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 Пример:
