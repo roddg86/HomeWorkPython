@@ -20,3 +20,5 @@
 Пример:
 - 6782 -> 23
 - 0,56 -> 11 """
+
+# print(sum(map(int, list(map(int, list(filter(lambda x: x.isdigit(), input('Введите любое число: '))))))))
