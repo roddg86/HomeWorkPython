@@ -4,8 +4,9 @@
 оставшихся чисел в одну строчку через пробел.
 [1,2,3,4,22,234,24] ----> [22, 24]
  """
-# list_num = list(map(int, input('Введте числа через пробел: ').split()))
-# print(*list(filter(lambda x: 9 < x < 100, list_num)))
+
+# print(*list(filter(lambda x: 9 < x < 100,
+#       list(map(int, input('Введте числа через пробел: ').split())))))
 
 """ Все задачи решать с помощью использования лямбд, filter, map, zip, enumerate, List Comprehension
 2) Дан список, вывести отдельно буквы и цифры, пользуясь filter.
