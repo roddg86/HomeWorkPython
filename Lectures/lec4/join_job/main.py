@@ -1,4 +1,4 @@
-""" Главный модуль """
+""" Главный модуль, программа сложение двух чисел """
 
 import html_creater as hc
 import xml_generator as xg
