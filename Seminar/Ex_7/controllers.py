@@ -18,7 +18,7 @@ def process_func(values: str):
     for _ in range(count_steps):
         res_lst = process_step(res_lst)
         step_view(values, res_lst)
-        logger(res_lst, file_path='steps.csv', func_name='process_step')
+        logger(res_lst, file_path='Seminar/EX_7/steps.csv', func_name='process_step')
 
     process_view(values, res_lst[0])
     logger(res_lst[0], func_name='process_func')
