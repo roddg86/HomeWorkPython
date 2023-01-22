@@ -13,7 +13,7 @@ def create(device=1):
         .format(pressure_view(device))
     xml += '</xml>'
 
-    with open('data.xml', 'w') as page:
+    with open('Lectures/lec4/join_job/data.xml', 'w') as page:
         page.write(xml)
 
     return xml
@@ -31,7 +31,7 @@ def new_create(data, device=1):
         .format(p)
     xml += '</xml>'
 
-    with open('new_data.xml', 'w') as page:
+    with open('Lectures/lec4/join_job/new_data.xml', 'w') as page:
         page.write(xml)
 
     return data

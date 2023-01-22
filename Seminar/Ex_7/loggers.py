@@ -6,7 +6,7 @@ from datetime import datetime
 дальше открыват файл по пути,  """
 
 
-def logger(data,  file_path='log.csv', func_name=None):
+def logger(data,  file_path='Seminar/EX_7/log.csv', func_name=None):
     time = datetime.now()
     with open(file_path, 'a', encoding='utf-8') as f:
         f.write(f'{time};{func_name};{data}\n')

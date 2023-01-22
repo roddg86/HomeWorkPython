@@ -16,7 +16,7 @@ def create(device=1):
         .format(style, pressure_view(device))
     html += '  </body>\n</html>'
 
-    with open('index.html', 'w') as page:
+    with open('Lectures/lec4/join_job/index.html', 'w') as page:
         page.write(html)
 
     return html
@@ -34,7 +34,7 @@ def new_create(data, device=1):
         .format(style, p)
     html += '  </body>\n</html>'
 
-    with open('new_index.html', 'w') as page:
+    with open('Lectures/lec4/join_job/new_index.html', 'w') as page:
         page.write(html)
 
     return data
