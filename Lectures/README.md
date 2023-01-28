@@ -23,3 +23,5 @@
 [Библиотеки python](pypi.org "pipi")
 
 [Телеграмм Api, бот Api](https://core.telegram.org/api "Бот Api")
+
+[Python Телеграмм бот Api](https://python-telegram-bot.org/ "python bot")
