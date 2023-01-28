@@ -20,3 +20,6 @@
 
 [Функция enumerate](https://younglinux.info/python/feature/enumerate "enumerate")
 
+[Библиотеки python](pypi.org "pipi")
+
+[Телеграмм Api, бот Api](https://core.telegram.org/api "Бот Api")
